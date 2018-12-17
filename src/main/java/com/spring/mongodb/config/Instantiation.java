@@ -15,7 +15,7 @@ public class Instantiation implements CommandLineRunner{
 	@Autowired
 	private UserRepository userRepository;
 	
-	@Autowired
+	@Override
 	public void run(String... arg0) throws Exception {
 		
 		userRepository.deleteAll();
